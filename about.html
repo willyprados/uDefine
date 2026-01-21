@@ -1,0 +1,514 @@
+<!doctype html>
+<html class="dark" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>uDefine About Us - Dark Mode</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#136dec",
+              "background-light": "#f6f7f8",
+              "background-dark": "#0b1016",
+              "background-card": "#151e29",
+            },
+            fontFamily: {
+              display: ["Inter", "sans-serif"],
+            },
+            borderRadius: {
+              DEFAULT: "0.25rem",
+              lg: "0.5rem",
+              xl: "0.75rem",
+              full: "9999px",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+    </style>
+  </head>
+  <body
+    class="font-display bg-background-light dark:bg-background-dark text-slate-900 dark:text-white overflow-x-hidden antialiased selection:bg-primary selection:text-white"
+  >
+    <div
+      class="fixed top-0 left-0 right-0 z-50 bg-[#111822]/90 backdrop-blur-md border-b border-white/5"
+    >
+      <div class="layout-container flex justify-center w-full">
+        <div
+          class="flex max-w-[1280px] flex-1 items-center justify-between px-6 py-4 lg:px-10"
+        >
+          <div class="flex items-center gap-2 text-white cursor-pointer group">
+            <!-- <div
+              class="size-8 flex items-center justify-center rounded-lg bg-gradient-to-br from-primary to-blue-600 shadow-[0_0_15px_rgba(19,109,236,0.3)]"
+            >
+              <span
+                class="material-symbols-outlined text-white"
+                style="font-size: 20px"
+                >polymer</span
+              >
+            </div>-->
+            <h2
+              class="text-white text-xl font-bold leading-tight tracking-tight group-hover:text-primary transition-colors"
+            >
+              uDefine
+            </h2>
+          </div>
+          <div class="hidden lg:flex items-center gap-8">
+            <nav class="flex items-center gap-8">
+              <a
+                class="text-sm font-medium text-slate-300 hover:text-white hover:shadow-[0_2px_0_0_#136dec] transition-all pb-1"
+                href="index.html"
+                >Home</a
+              >
+              <a
+                class="text-sm font-medium text-white shadow-[0_2px_0_0_#136dec] transition-all pb-1"
+                href="#"
+                >About</a
+              >
+              <a
+                class="text-sm font-medium text-slate-300 hover:text-white hover:shadow-[0_2px_0_0_#136dec] transition-all pb-1"
+                href="#"
+                >Services</a
+              >
+              <a
+                class="text-sm font-medium text-slate-300 hover:text-white hover:shadow-[0_2px_0_0_#136dec] transition-all pb-1"
+                href="#"
+                >Success Stories</a
+              >
+              <a
+                class="text-sm font-medium text-slate-300 hover:text-white hover:shadow-[0_2px_0_0_#136dec] transition-all pb-1"
+                href="#"
+                >Contact</a
+              >
+              <a
+                class="text-sm font-medium text-slate-300 hover:text-white hover:shadow-[0_2px_0_0_#136dec] transition-all pb-1"
+                href="ui-kit.html"
+                >UI Kit</a
+              >
+            </nav>
+            <button
+              class="flex cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-6 bg-primary hover:bg-blue-600 text-white text-sm font-bold shadow-[0_0_20px_rgba(19,109,236,0.4)] hover:shadow-[0_0_30px_rgba(19,109,236,0.6)] transition-all duration-300"
+            >
+              <span class="truncate">Get Started</span>
+            </button>
+          </div>
+          <button class="lg:hidden text-white">
+            <span class="material-symbols-outlined">menu</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <main class="flex flex-col min-h-screen pt-16">
+      <section
+        class="relative flex min-h-[60vh] flex-col items-center justify-center overflow-hidden px-4 py-20"
+      >
+        <div class="absolute inset-0 z-0">
+          <div
+            class="absolute inset-0 bg-gradient-to-b from-[#111822]/60 via-[#111822]/80 to-[#0b1016] z-10"
+          ></div>
+          <div
+            class="h-full w-full bg-cover bg-[position:center_30%]"
+            data-alt="Large team group photo of uDefine employees smiling together"
+            style="
+              background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuA57G6udwV2EcXQca2lfAcB-iZqFeE95txLFwkX5wBhuL4PcMNt_I5kZYfnZP5_OF1FqTL3INpfG_otHVEU9PP3JJwn0ywE3yKTWP_wWQbcqDb-aHLZ-nGxDuvoarl3VlkyA48ObmmHgUHZNGR9-zwECsLy3t7IHom9CLzmBe1PK1YNft1a5lOeD0EzB0-yOIBf0-1M54D7Irij7mzsQjH_3cUO_6UNqxs1_9uOBOfDniB4WSBJ-6u82oLZcgybo4RfxVHmIhCYRJ8&quot;);
+            "
+          ></div>
+        </div>
+        <div
+          class="layout-content-container relative z-20 flex max-w-[960px] flex-col items-center gap-6 text-center animate-in fade-in slide-in-from-bottom-8 duration-1000"
+        >
+          <h1
+            class="text-white text-5xl md:text-7xl font-black leading-tight tracking-tight drop-shadow-2xl"
+          >
+            About Us
+          </h1>
+          <h2
+            class="max-w-[800px] text-slate-300 text-xl md:text-2xl font-normal leading-relaxed"
+          >
+            We are ready! Let's create something awesome...
+          </h2>
+        </div>
+      </section>
+      <section class="py-24 px-4 lg:px-40 bg-background-dark">
+        <div
+          class="layout-content-container mx-auto flex max-w-[900px] flex-col gap-10 text-center"
+        >
+          <div class="flex flex-col gap-6 items-center">
+            <h2
+              class="text-4xl md:text-5xl font-bold text-white tracking-tight"
+            >
+              Experience and Expertise
+            </h2>
+            <p
+              class="text-primary font-medium text-lg uppercase tracking-wider"
+            >
+              "...meet Our Team of Highly-Qualified Consultants..."
+            </p>
+          </div>
+          <div
+            class="bg-background-card p-10 rounded-2xl border border-white/5 shadow-2xl relative overflow-hidden"
+          >
+            <div
+              class="absolute top-0 right-0 w-32 h-32 bg-primary/10 blur-[60px] rounded-full pointer-events-none"
+            ></div>
+            <p class="text-slate-300 text-lg leading-loose relative z-10">
+              Our team of consultants has an average of over 10 years of working
+              experience and is highly qualified to provide exceptional services
+              to our customers. At uDefine, we prioritize building strong
+              relationships, not only with our customers but also within our
+              uDefine family.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section
+        class="py-24 px-4 lg:px-40 bg-[#0d1219] relative overflow-hidden"
+      >
+        <div
+          class="absolute inset-0 bg-gradient-to-b from-transparent via-primary/5 to-transparent pointer-events-none"
+        ></div>
+        <div
+          class="layout-content-container mx-auto flex max-w-[1100px] flex-col gap-16 relative z-10"
+        >
+          <div class="text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">
+              We speak your Language
+            </h2>
+            <div class="h-1 w-20 bg-primary mx-auto rounded-full"></div>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div class="flex flex-col items-center text-center gap-6 group">
+              <div
+                class="size-20 rounded-2xl bg-gradient-to-br from-[#1a2332] to-[#0b1016] flex items-center justify-center border border-white/10 shadow-[0_0_30px_rgba(0,0,0,0.3)] group-hover:border-primary/50 group-hover:shadow-[0_0_30px_rgba(19,109,236,0.2)] transition-all duration-300"
+              >
+                <span
+                  class="material-symbols-outlined text-primary text-5xl group-hover:scale-110 transition-transform duration-300"
+                  >public</span
+                >
+              </div>
+              <div class="flex flex-col gap-3">
+                <h3 class="text-white text-xl font-bold">
+                  International Expertise Local Understanding
+                </h3>
+                <div class="flex gap-1 justify-center mb-2">
+                  <span class="w-2 h-2 rounded-full bg-yellow-500"></span>
+                  <span class="w-2 h-2 rounded-full bg-orange-500"></span>
+                  <span class="w-2 h-2 rounded-full bg-red-500"></span>
+                </div>
+                <p class="text-slate-400 leading-relaxed max-w-sm mx-auto">
+                  Our SAP consultants bring international expertise tailored to
+                  local nuances, ensuring your projects succeed everywhere.
+                </p>
+              </div>
+            </div>
+            <div class="flex flex-col items-center text-center gap-6 group">
+              <div
+                class="size-20 rounded-2xl bg-gradient-to-br from-[#1a2332] to-[#0b1016] flex items-center justify-center border border-white/10 shadow-[0_0_30px_rgba(0,0,0,0.3)] group-hover:border-primary/50 group-hover:shadow-[0_0_30px_rgba(19,109,236,0.2)] transition-all duration-300"
+              >
+                <span
+                  class="material-symbols-outlined text-primary text-5xl group-hover:scale-110 transition-transform duration-300"
+                  >chat_bubble</span
+                >
+              </div>
+              <div class="flex flex-col gap-3">
+                <h3 class="text-white text-xl font-bold">
+                  We Speak SAP! And We Speak Your Language
+                </h3>
+                <div class="flex gap-1 justify-center mb-2">
+                  <span class="w-2 h-2 rounded-full bg-yellow-500"></span>
+                  <span class="w-2 h-2 rounded-full bg-orange-500"></span>
+                  <span class="w-2 h-2 rounded-full bg-red-500"></span>
+                </div>
+                <p class="text-slate-400 leading-relaxed max-w-sm mx-auto">
+                  Get the best of both worlds – technical proficiency and
+                  effective communication. Our multilingual team is fluent in
+                  SAP solutions and your language.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="py-24 px-4 lg:px-40 bg-background-dark border-t border-white/5"
+      >
+        <div
+          class="layout-content-container mx-auto flex max-w-[1000px] flex-col items-center text-center gap-8"
+        >
+          <h2 class="text-4xl md:text-5xl font-black text-white">
+            We reinvent ourselves just like you
+          </h2>
+          <p class="text-slate-300 text-lg max-w-[700px]">
+            Our transformation reflects our commitment to your digital growth.
+            We evolve to be the change your business needs.
+          </p>
+          <div
+            class="w-full h-px bg-gradient-to-r from-transparent via-white/10 to-transparent my-8"
+          ></div>
+        </div>
+      </section>
+      <section class="py-20 px-4 lg:px-40 bg-[#111822] relative">
+        <div
+          class="layout-content-container mx-auto flex max-w-[1100px] flex-col md:flex-row gap-16 items-center"
+        >
+          <div class="flex-1 flex flex-col gap-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-white">
+              Want to join our Team?
+            </h2>
+            <p class="text-slate-400 leading-relaxed">
+              Attention all job seekers! Our company is growing and we are on
+              the lookout for talented individuals to join our team. If you are
+              a hardworking, motivated professional with a passion for
+              excellence, we want to hear from you! We offer a challenging and
+              rewarding work environment, competitive compensation packages, and
+              opportunities for growth.
+            </p>
+          </div>
+          <div class="flex-1 w-full max-w-md">
+            <div
+              class="bg-background-card rounded-xl border border-white/5 p-8 shadow-xl flex flex-col gap-6"
+            >
+              <div
+                class="flex items-center justify-between border-b border-white/5 pb-4"
+              >
+                <span class="text-white font-medium"
+                  >Already a SAP Professional?</span
+                >
+                <span class="material-symbols-outlined text-green-500"
+                  >check_circle</span
+                >
+              </div>
+              <div
+                class="flex items-center justify-between border-b border-white/5 pb-4"
+              >
+                <span class="text-white font-medium">Motivated Graduate?</span>
+                <span class="material-symbols-outlined text-green-500"
+                  >check_circle</span
+                >
+              </div>
+              <button
+                class="w-full mt-2 cursor-pointer items-center justify-center rounded-lg h-12 bg-primary hover:bg-blue-600 text-white text-sm font-bold shadow-[0_0_20px_rgba(19,109,236,0.3)] transition-all duration-300"
+              >
+                Want to know more?
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="py-24 px-4 lg:px-40 bg-background-dark border-t border-white/5"
+      >
+        <div
+          class="layout-content-container mx-auto flex max-w-[1100px] flex-col gap-12 text-center"
+        >
+          <h2 class="text-3xl font-bold text-white">Our Alliances</h2>
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-8 opacity-70">
+            <div
+              class="h-20 flex items-center justify-center bg-white/5 rounded-lg border border-white/5 hover:bg-white/10 hover:opacity-100 transition-all cursor-default"
+            >
+              <span class="text-white font-bold text-lg flex items-center gap-2"
+                ><span class="material-symbols-outlined">verified</span> SAP
+                Member</span
+              >
+            </div>
+            <div
+              class="h-20 flex items-center justify-center bg-white/5 rounded-lg border border-white/5 hover:bg-white/10 hover:opacity-100 transition-all cursor-default"
+            >
+              <span class="text-white font-bold text-lg">VENTURESOUQ</span>
+            </div>
+            <div
+              class="h-20 flex items-center justify-center bg-white/5 rounded-lg border border-white/5 hover:bg-white/10 hover:opacity-100 transition-all cursor-default"
+            >
+              <span
+                class="text-white font-bold text-lg text-orange-500 flex items-center gap-1"
+                ><span class="material-symbols-outlined">security</span>
+                ONAPSIS</span
+              >
+            </div>
+            <div
+              class="h-20 flex items-center justify-center bg-white/5 rounded-lg border border-white/5 hover:bg-white/10 hover:opacity-100 transition-all cursor-default"
+            >
+              <span
+                class="text-white font-bold text-lg text-red-500 flex items-center gap-1"
+                ><span class="material-symbols-outlined">shield</span>
+                CyberSafe</span
+              >
+            </div>
+            <div
+              class="h-20 flex items-center justify-center bg-white/5 rounded-lg border border-white/5 hover:bg-white/10 hover:opacity-100 transition-all cursor-default"
+            >
+              <span class="text-white font-bold text-lg">VOQUZ Labs</span>
+            </div>
+            <div
+              class="h-20 flex items-center justify-center bg-white/5 rounded-lg border border-white/5 hover:bg-white/10 hover:opacity-100 transition-all cursor-default"
+            >
+              <span class="text-white font-bold text-lg flex items-center gap-1"
+                ><span class="material-symbols-outlined">flight</span> SNP</span
+              >
+            </div>
+            <div
+              class="h-20 flex items-center justify-center bg-white/5 rounded-lg border border-white/5 hover:bg-white/10 hover:opacity-100 transition-all cursor-default"
+            >
+              <span
+                class="text-white font-bold text-lg text-cyan-400 flex items-center gap-1"
+                ><span class="material-symbols-outlined">circle</span>
+                Panaya</span
+              >
+            </div>
+            <div
+              class="h-20 flex items-center justify-center bg-white/5 rounded-lg border border-white/5 hover:bg-white/10 hover:opacity-100 transition-all cursor-default"
+            >
+              <span class="text-white font-bold text-xl italic">kgs</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer
+      class="bg-[#05080c] border-t border-white/5 pt-16 pb-8 px-4 lg:px-10 text-white"
+    >
+      <div class="layout-container mx-auto max-w-[1280px]">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+          <div class="col-span-1 md:col-span-1 flex flex-col gap-4">
+            <div class="flex items-center gap-2">
+              <!--<div
+                class="size-6 flex items-center justify-center rounded bg-primary"
+              >
+                <span class="material-symbols-outlined text-white text-xs"
+                  >polymer</span
+                >
+              </div>-->
+              <h2 class="text-lg font-bold">uDefine</h2>
+            </div>
+            <p class="text-slate-500 text-sm leading-relaxed">
+              Expert SAP Fiori development and strategic consulting for the
+              modern digital enterprise.
+            </p>
+            <div class="flex gap-4 mt-2">
+              <a
+                class="text-slate-400 hover:text-primary transition-colors"
+                href="#"
+              >
+                <!--<i class="fa-brands fa-linkedin text-xl"></i>-->
+                <span class="text-sm font-medium">LinkedIn</span>
+              </a>
+              <a
+                class="text-slate-400 hover:text-primary transition-colors"
+                href="#"
+              >
+                <span class="text-sm font-medium">Twitter</span>
+              </a>
+            </div>
+          </div>
+          <div>
+            <h3 class="text-white font-bold mb-4">Services</h3>
+            <ul class="flex flex-col gap-2 text-sm text-slate-400">
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >Fiori Development</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >S/4HANA Migration</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >System Integration</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >UX Strategy</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-white font-bold mb-4">Company</h3>
+            <ul class="flex flex-col gap-2 text-sm text-slate-400">
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >Success Stories</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >Careers</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-white font-bold mb-4">Contact</h3>
+            <ul class="flex flex-col gap-3 text-sm text-slate-400">
+              <li class="flex items-start gap-2">
+                <span
+                  class="material-symbols-outlined text-primary text-base mt-0.5"
+                  >location_on</span
+                >
+                <span>Avenida de Roma, 119, Escalera B, Entlo. Plta 1ª</br> Barcelona, Catalonia 08011, ES</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-primary text-base"
+                  >email</span
+                >
+                <span>hello@udefine.net</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-primary text-base"
+                  >call</span
+                >
+                <span>+34 (600) 123-4567</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center gap-4"
+        >
+          <p class="text-slate-600 text-sm">
+            © 2023 uDefine Consulting. All rights reserved.
+          </p>
+          <div class="flex gap-6 text-sm text-slate-600">
+            <a class="hover:text-slate-400" href="#">Privacy Policy</a>
+            <a class="hover:text-slate-400" href="#">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
