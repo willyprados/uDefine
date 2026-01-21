@@ -1,0 +1,509 @@
+<!doctype html>
+<html class="dark" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>uDefine Contact - Start Your Project</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#136dec",
+              "background-light": "#f6f7f8",
+              "background-dark": "#0b1016",
+              "background-card": "#151e29",
+              "surface-dark": "#111822",
+            },
+            fontFamily: {
+              display: ["Inter", "sans-serif"],
+            },
+            backgroundImage: {
+              "grid-pattern":
+                "linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px), linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px)",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+
+      .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+    </style>
+  </head>
+
+  <body
+    class="font-display bg-background-light dark:bg-background-dark text-slate-900 dark:text-white overflow-x-hidden antialiased selection:bg-primary selection:text-white"
+  >
+    <div
+      class="fixed top-0 left-0 right-0 z-50 bg-[#111822]/90 backdrop-blur-md border-b border-white/5"
+    >
+      <div class="layout-container flex justify-center w-full">
+        <div
+          class="flex max-w-[1280px] flex-1 items-center justify-between px-6 py-4 lg:px-10"
+        >
+          <div class="flex items-center gap-2 text-white cursor-pointer group">
+            <!--<div class="size-8 flex items-center justify-center rounded-lg bg-gradient-to-br from-primary to-blue-600 shadow-[0_0_15px_rgba(19,109,236,0.3)]">
+<span class="material-symbols-outlined text-white" style="font-size: 20px;">polymer</span>
+</div>-->
+            <h2
+              class="text-white text-xl font-bold leading-tight tracking-tight group-hover:text-primary transition-colors"
+            >
+              uDefine
+            </h2>
+          </div>
+          <div class="hidden lg:flex items-center gap-8">
+            <nav class="flex items-center gap-8">
+              <a
+                class="text-sm font-medium text-slate-300 hover:text-white hover:shadow-[0_2px_0_0_#136dec] transition-all pb-1"
+                href="index.html"
+                >Home</a
+              >
+              <a
+                class="text-sm font-medium text-slate-300 hover:text-white hover:shadow-[0_2px_0_0_#136dec] transition-all pb-1"
+                href="about.html"
+                >About</a
+              >
+              <a
+                class="text-sm font-medium text-slate-300 hover:text-white hover:shadow-[0_2px_0_0_#136dec] transition-all pb-1"
+                href="services.html"
+                >Services</a
+              >
+              <a
+                class="text-sm font-medium text-slate-300 hover:text-white hover:shadow-[0_2px_0_0_#136dec] transition-all pb-1"
+                href="#"
+                >Success Stories</a
+              >
+              <a
+                class="text-sm font-medium text-white shadow-[0_2px_0_0_#136dec] transition-all pb-1"
+                href="#"
+                >Contact</a
+              >
+            </nav>
+            <button
+              class="flex cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-6 bg-primary hover:bg-blue-600 text-white text-sm font-bold shadow-[0_0_20px_rgba(19,109,236,0.4)] hover:shadow-[0_0_30px_rgba(19,109,236,0.6)] transition-all duration-300"
+            >
+              <span class="truncate">Get Started</span>
+            </button>
+          </div>
+          <button class="lg:hidden text-white">
+            <span class="material-symbols-outlined">menu</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <main class="flex flex-col min-h-screen pt-16">
+      <section
+        class="relative flex flex-col items-center justify-center overflow-hidden px-4 py-24 bg-background-dark"
+      >
+        <div class="absolute inset-0 z-0">
+          <div
+            class="absolute inset-0 bg-gradient-to-br from-[#0b1016] via-[#111822] to-[#0f2545]"
+          ></div>
+          <div
+            class="absolute inset-0 bg-grid-pattern bg-[length:40px_40px] opacity-30"
+          ></div>
+          <div
+            class="absolute top-0 right-1/4 w-[600px] h-[400px] bg-primary/10 blur-[120px] rounded-full pointer-events-none"
+          ></div>
+          <div
+            class="absolute bottom-0 left-1/4 w-[500px] h-[300px] bg-blue-600/10 blur-[100px] rounded-full pointer-events-none"
+          ></div>
+        </div>
+        <div
+          class="layout-content-container relative z-20 flex max-w-[960px] flex-col items-center gap-6 text-center animate-in fade-in slide-in-from-bottom-8 duration-1000"
+        >
+          <div
+            class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-primary text-sm font-medium mb-2"
+          >
+            <span
+              class="flex h-2 w-2 rounded-full bg-primary animate-pulse"
+            ></span>
+            Ready to Start?
+          </div>
+          <h1
+            class="text-white text-5xl md:text-7xl font-black leading-tight tracking-tight drop-shadow-2xl"
+          >
+            Let's Build the Future of <br /><span
+              class="text-transparent bg-clip-text bg-gradient-to-r from-white via-primary to-blue-400"
+              >Your Business</span
+            >
+          </h1>
+          <p
+            class="max-w-[700px] text-slate-300 text-lg md:text-xl font-normal leading-relaxed"
+          >
+            Start your SAP transformation journey today. Whether you need expert
+            consulting, Fiori development, or operational support, we are here
+            to guide you.
+          </p>
+        </div>
+      </section>
+      <section
+        class="py-20 px-4 lg:px-40 bg-surface-dark border-t border-white/5 relative"
+      >
+        <div class="layout-content-container mx-auto max-w-[1200px]">
+          <div class="grid lg:grid-cols-2 gap-16 lg:gap-24">
+            <div class="relative group">
+              <div
+                class="absolute inset-0 bg-gradient-to-r from-primary/20 to-blue-600/20 rounded-3xl blur-xl opacity-50 group-hover:opacity-75 transition-opacity duration-500"
+              ></div>
+              <div
+                class="relative bg-background-card/60 backdrop-blur-xl border border-white/10 p-8 md:p-10 rounded-3xl shadow-2xl overflow-hidden"
+              >
+                <div
+                  class="absolute top-0 right-0 w-32 h-32 bg-primary/10 blur-[50px] rounded-full pointer-events-none"
+                ></div>
+                <h3 class="text-2xl font-bold text-white mb-6">
+                  Send us a message
+                </h3>
+                <form class="flex flex-col gap-6">
+                  <div class="flex flex-col gap-2">
+                    <label class="text-slate-400 text-sm font-medium ml-1"
+                      >Full Name</label
+                    >
+                    <div class="relative">
+                      <input
+                        class="w-full bg-[#0b1016] border border-white/10 rounded-xl px-5 py-3.5 text-white placeholder:text-slate-600 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all duration-300"
+                        placeholder="John Doe"
+                        type="text"
+                      />
+                      <span
+                        class="material-symbols-outlined absolute right-4 top-3.5 text-slate-600"
+                        >person</span
+                      >
+                    </div>
+                  </div>
+                  <div class="flex flex-col gap-2">
+                    <label class="text-slate-400 text-sm font-medium ml-1"
+                      >Corporate Email</label
+                    >
+                    <div class="relative">
+                      <input
+                        class="w-full bg-[#0b1016] border border-white/10 rounded-xl px-5 py-3.5 text-white placeholder:text-slate-600 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all duration-300"
+                        placeholder="john@company.com"
+                        type="email"
+                      />
+                      <span
+                        class="material-symbols-outlined absolute right-4 top-3.5 text-slate-600"
+                        >mail</span
+                      >
+                    </div>
+                  </div>
+                  <div class="flex flex-col gap-2">
+                    <label class="text-slate-400 text-sm font-medium ml-1"
+                      >Company</label
+                    >
+                    <div class="relative">
+                      <input
+                        class="w-full bg-[#0b1016] border border-white/10 rounded-xl px-5 py-3.5 text-white placeholder:text-slate-600 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all duration-300"
+                        placeholder="Your Company Name"
+                        type="text"
+                      />
+                      <span
+                        class="material-symbols-outlined absolute right-4 top-3.5 text-slate-600"
+                        >business</span
+                      >
+                    </div>
+                  </div>
+                  <div class="flex flex-col gap-2">
+                    <label class="text-slate-400 text-sm font-medium ml-1"
+                      >Service of Interest</label
+                    >
+                    <div class="relative">
+                      <select
+                        class="w-full bg-[#0b1016] border border-white/10 rounded-xl px-5 py-3.5 text-white focus:border-primary focus:ring-1 focus:ring-primary outline-none appearance-none transition-all duration-300 cursor-pointer"
+                      >
+                        <option disabled="" selected="" value="">
+                          Select a service...
+                        </option>
+                        <option value="consulting">SAP Consulting</option>
+                        <option value="fiori">Fiori Development</option>
+                        <option value="operations">
+                          Operations &amp; Support
+                        </option>
+                        <option value="other">Other</option>
+                      </select>
+                      <span
+                        class="material-symbols-outlined absolute right-4 top-3.5 text-slate-600 pointer-events-none"
+                        >expand_more</span
+                      >
+                    </div>
+                  </div>
+                  <div class="flex flex-col gap-2">
+                    <label class="text-slate-400 text-sm font-medium ml-1"
+                      >Message</label
+                    >
+                    <textarea
+                      class="w-full bg-[#0b1016] border border-white/10 rounded-xl px-5 py-3.5 text-white placeholder:text-slate-600 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all duration-300 resize-none"
+                      placeholder="How can we help you?"
+                      rows="4"
+                    ></textarea>
+                  </div>
+                  <button
+                    class="mt-2 flex items-center justify-center gap-2 w-full rounded-xl bg-primary px-8 py-4 text-white font-bold text-lg hover:bg-blue-600 shadow-[0_0_20px_rgba(19,109,236,0.4)] hover:shadow-[0_0_30px_rgba(19,109,236,0.6)] transition-all duration-300 group-hover:scale-[1.02]"
+                    type="button"
+                  >
+                    Send Message
+                    <span class="material-symbols-outlined text-sm">send</span>
+                  </button>
+                </form>
+              </div>
+            </div>
+            <div class="flex flex-col justify-center gap-12 py-8">
+              <div class="flex flex-col gap-4">
+                <span
+                  class="text-primary font-bold tracking-widest uppercase text-sm"
+                  >Get in Touch</span
+                >
+                <h2 class="text-4xl font-bold text-white">We help you grow</h2>
+                <p class="text-slate-400 text-lg leading-relaxed">
+                  Our global team of experts is ready to assist you. Reach out
+                  to one of our regional offices or send us an email directly.
+                </p>
+              </div>
+              <div class="grid gap-8">
+                <div
+                  class="flex items-start gap-4 p-4 rounded-xl border border-transparent hover:border-white/5 hover:bg-white/5 transition-all duration-300"
+                >
+                  <div
+                    class="size-12 rounded-xl bg-blue-500/10 flex items-center justify-center shrink-0 border border-blue-500/20"
+                  >
+                    <span
+                      class="material-symbols-outlined text-primary text-2xl"
+                      >location_on</span
+                    >
+                  </div>
+                  <div>
+                    <h4 class="text-white font-bold text-lg mb-1">
+                      Madrid, Spain
+                    </h4>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                      Paseo de la Castellana 259<br />
+                      28046 Madrid
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="flex items-start gap-4 p-4 rounded-xl border border-transparent hover:border-white/5 hover:bg-white/5 transition-all duration-300"
+                >
+                  <div
+                    class="size-12 rounded-xl bg-blue-500/10 flex items-center justify-center shrink-0 border border-blue-500/20"
+                  >
+                    <span
+                      class="material-symbols-outlined text-primary text-2xl"
+                      >map</span
+                    >
+                  </div>
+                  <div>
+                    <h4 class="text-white font-bold text-lg mb-1">
+                      São Paulo, Brazil
+                    </h4>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                      Av. Paulista, 1374<br />
+                      Bela Vista, São Paulo
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="flex items-start gap-4 p-4 rounded-xl border border-transparent hover:border-white/5 hover:bg-white/5 transition-all duration-300"
+                >
+                  <div
+                    class="size-12 rounded-xl bg-blue-500/10 flex items-center justify-center shrink-0 border border-blue-500/20"
+                  >
+                    <span
+                      class="material-symbols-outlined text-primary text-2xl"
+                      >alternate_email</span
+                    >
+                  </div>
+                  <div>
+                    <h4 class="text-white font-bold text-lg mb-1">Email Us</h4>
+                    <a
+                      class="text-primary hover:text-white transition-colors"
+                      href="mailto:hello@udefine.net"
+                      >hello@udefine.net</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div
+                class="h-px w-full bg-gradient-to-r from-transparent via-white/10 to-transparent"
+              ></div>
+              <div class="flex flex-col gap-4">
+                <span class="text-slate-500 text-sm font-medium"
+                  >Follow us on social media</span
+                >
+                <div class="flex gap-4">
+                  <a
+                    class="flex items-center gap-2 px-5 py-2.5 rounded-lg bg-white/5 hover:bg-white/10 border border-white/5 hover:border-primary/30 transition-all group"
+                    href="#"
+                  >
+                    <span
+                      class="text-slate-300 group-hover:text-white font-medium text-sm"
+                      >LinkedIn</span
+                    >
+                    <span
+                      class="material-symbols-outlined text-slate-400 group-hover:text-primary text-sm"
+                      >arrow_outward</span
+                    >
+                  </a>
+                  <a
+                    class="flex items-center gap-2 px-5 py-2.5 rounded-lg bg-white/5 hover:bg-white/10 border border-white/5 hover:border-primary/30 transition-all group"
+                    href="#"
+                  >
+                    <span
+                      class="text-slate-300 group-hover:text-white font-medium text-sm"
+                      >Twitter</span
+                    >
+                    <span
+                      class="material-symbols-outlined text-slate-400 group-hover:text-primary text-sm"
+                      >arrow_outward</span
+                    >
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer
+      class="bg-[#05080c] border-t border-white/5 pt-16 pb-8 px-4 lg:px-10 text-white"
+    >
+      <div class="layout-container mx-auto max-w-[1280px]">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+          <div class="col-span-1 md:col-span-1 flex flex-col gap-4">
+            <div class="flex items-center gap-2">
+              <!--<div class="size-6 flex items-center justify-center rounded bg-primary">
+<span class="material-symbols-outlined text-white text-xs">polymer</span>
+</div>-->
+              <h2 class="text-lg font-bold">uDefine</h2>
+            </div>
+            <p class="text-slate-500 text-sm leading-relaxed">
+              Expert SAP Fiori development and strategic consulting for the
+              modern digital enterprise.
+            </p>
+            <div class="flex gap-4 mt-2">
+              <a
+                class="text-slate-400 hover:text-primary transition-colors"
+                href="#"
+              >
+                <span class="text-sm font-medium">LinkedIn</span>
+              </a>
+              <a
+                class="text-slate-400 hover:text-primary transition-colors"
+                href="#"
+              >
+                <span class="text-sm font-medium">Twitter</span>
+              </a>
+            </div>
+          </div>
+          <div>
+            <h3 class="text-white font-bold mb-4">Services</h3>
+            <ul class="flex flex-col gap-2 text-sm text-slate-400">
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >Fiori Development</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >S/4HANA Migration</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >System Integration</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >UX Strategy</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-white font-bold mb-4">Company</h3>
+            <ul class="flex flex-col gap-2 text-sm text-slate-400">
+              <li>
+                <a
+                  class="hover:text-primary transition-colors"
+                  href="about.html"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >Success Stories</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-primary transition-colors" href="#"
+                  >Careers</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-primary transition-colors" href="contact.html"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-white font-bold mb-4">Contact</h3>
+            <ul class="flex flex-col gap-3 text-sm text-slate-400">
+              <li class="flex items-start gap-2">
+                <span
+                  class="material-symbols-outlined text-primary text-base mt-0.5"
+                  >location_on</span
+                >
+                <span>Avenida de Roma, 119, Escalera B, Entlo. Plta 1ª</br> Barcelona, Catalonia 08011, ES</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-primary text-base"
+                  >email</span
+                >
+                <span>hello@udefine.net</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-primary text-base"
+                  >call</span
+                >
+                <span>+34 (600) 123-4567</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center gap-4"
+        >
+          <p class="text-slate-600 text-sm">
+            © 2026 uDefine Consulting. All rights reserved.
+          </p>
+          <div class="flex gap-6 text-sm text-slate-600">
+            <a class="hover:text-slate-400" href="#">Privacy Policy</a>
+            <a class="hover:text-slate-400" href="#">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
